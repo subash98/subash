@@ -1,0 +1,5 @@
+#!/bin/bash
+ls > f4
+echo The no of files are 
+grep "$1" f4 | wc
+

@@ -1,0 +1,11 @@
+#!/bin/bash
+file=$1
+if test -f $file
+then
+	echo "file exist"
+	mv $1 $2
+	echo $#
+else
+	echo "file doesn't exist"
+fi
+

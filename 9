@@ -1,0 +1,14 @@
+#!/bin/bash
+if test -f $1
+then
+	if test -f $2
+		then
+			head -10 $1 > $3
+			head -10 $2 >> $3
+	else 
+		echo File 2 doesnt exist
+	fi 
+else 
+	echo File 1 doesnt exist
+fi
+

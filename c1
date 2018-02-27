@@ -1,0 +1,8 @@
+#!/bin/bash
+whoami 
+echo "$SHELL"
+echo "$HOME"
+echo "$(uname -a)"
+echo "$pwd"
+echo "$PATH"
+echo "$(who -q)"

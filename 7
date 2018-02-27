@@ -1,0 +1,13 @@
+#!/bin/bash
+file=$2
+if test -f $file
+then echo "file exist"
+if grep -Fq "$1" $2
+then 
+	echo The string was found
+else 
+	echo The string was not found
+fi 
+else
+	echo "file doesn't exist"
+fi
